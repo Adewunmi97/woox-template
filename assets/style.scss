@@ -1,1 +1,67 @@
 @import "../_partials/autoload";
+
+header {
+    background-color: $primary;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button {
+            background: none;
+            border: none;
+            color: $secondary;
+            font-size: 1.5rem;
+            @include medium {
+                display: none;
+            }
+        }
+        ul {
+            width: 100%;
+            max-width: 100%;
+            box-shadow: 0 0 1rem 0 $faint;
+            display: flex;
+            flex-direction: column;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            list-style: none;
+            text-align: center;
+            top: 75px;
+            @include medium {
+                position: static;
+                box-shadow: none;
+                flex-direction: row;
+                transform: translateX(0);
+                align-items: center;
+            }
+            
+            li {
+                width: 100%;
+                border-bottom: 1px solid $border;
+                padding: 10px;
+                @include medium {
+                    border: none;
+                    width: max-content;
+                }
+                a {
+                    text-decoration: none;
+                    font-size: 1.1rem;
+                    color: $dark;
+                    transition: 1.0s;
+                    &:hover {
+                        color: $primary;
+                    }
+                    &:active {
+                        color: $primary;
+                    }
+                    @include medium {
+                        color: $secondary;
+                        &:hover {
+                            color: $hover;
+                        }      
+                    } 
+                }
+            }
+            }
+        }
+    }
