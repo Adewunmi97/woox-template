@@ -11,6 +11,7 @@ $dark: #232223;
 $faint: #2a2a2a;
 $hover: #e1d8d8dc;
 $border: #eeeeee;
+$p-tags: #bcbcbc;
 
 * {
     padding: 0;
@@ -20,6 +21,8 @@ $border: #eeeeee;
 
 body {
     font-family: $font1;
+    line-height: 1.7em;
+    font-size: 12px;
 }
 
 

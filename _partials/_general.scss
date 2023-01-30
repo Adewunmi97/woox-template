@@ -4,3 +4,27 @@
     height: 100%;
     padding: 1rem 0;
 }
+a {
+    text-decoration: none;
+}
+.a-general1 {
+    color: $primary;
+    padding: 10px 30px;
+    border: 1px solid $primary;
+    border-radius: 30px;
+        &:hover {
+            color: $secondary;
+            background-color: $primary;
+        }
+    }
+.a-general2 {
+    width: 100px;
+    padding: 10px 30px;
+    color: $secondary;
+    background-color: $primary;
+    border-radius: 30px;
+        &:hover {
+            filter: grayscale(0.3);   
+        }
+    }
+    
